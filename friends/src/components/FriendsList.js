@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from 'react';
+import React, { useEffect} from 'react';
 import { connect } from 'react-redux'
 import AddFriend from './AddFriend';
 
@@ -40,7 +40,7 @@ const mapDispatchToProps = {
 function mapStateToProps(state) {
   return {
     friends: state.friends,
-    isFetching: state.isLoading, 
+    isFetching: state.Fetching, 
     error: state.error
   }
 }

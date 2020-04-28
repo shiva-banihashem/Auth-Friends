@@ -38,7 +38,7 @@ const DisplayFriends = props => {
       function mapStateToProps(state) {
         return {
           friends: state.friends,
-          isFetching: state.isLoading, 
+          isFetching: state.isFetching, 
           error: state.error
         }
       }
